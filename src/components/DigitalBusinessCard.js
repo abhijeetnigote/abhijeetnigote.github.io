@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import profileImage from "../profile.jpg";
-import { FaLinkedin, FaInstagram, FaWhatsapp, FaAddressBook, FaX, FaPhone } from "react-icons/fa6";
+import { FaLinkedin, FaInstagram, FaWhatsapp, FaAddressBook } from "react-icons/fa6";
 
 export default function DigitalBusinessCard() {
-  // Detect system theme
   const [theme, setTheme] = useState(() =>
     window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"
   );
@@ -26,33 +25,27 @@ export default function DigitalBusinessCard() {
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-900 p-4">
       <div className="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-6 text-center w-80">
         <img src={profileImage} alt="Profile" className="w-24 h-24 rounded-full mx-auto mb-4" />
-        <h1 className="text-xl font-bold mb-2 dark:text-white">Sanjit Singh Chouhan</h1>
+        <h1 className="text-xl font-bold mb-2 dark:text-white">Abhijeet Nigote</h1>
         <p className="text-gray-600 dark:text-gray-300">
-          💻&nbsp;Code | 🏋️&nbsp;Gym | 🎮&nbsp;Video Games | 🚴‍♂️&nbsp;Bike Trips | 🎶&nbsp;Music Lover | ⛰️&nbsp;Trekking
+          🎧&nbsp;Sound Designer | 🎸&nbsp;Guitar | 🎼&nbsp;Musician | 🏍️&nbsp;Bike | 🎮&nbsp;Gaming | 🌌&nbsp;Space
         </p>
         <div className="mt-4 space-y-3">
-          <a href="./sanjit_chouhan.vcf"
+          <a href="./abhijeet_nigote.vcf"
             className="flex items-center justify-center w-full bg-green-600 text-white py-2 rounded-xl shadow-md space-x-2">
             <FaAddressBook /> <span>Add Me to Contacts</span>
           </a>
-          <a href="https://www.linkedin.com/in/sanjitschouhan" target="_blank" className="flex items-center justify-center w-full bg-blue-700 dark:bg-blue-600 text-white py-2 rounded-xl shadow-md space-x-2">
-            <FaLinkedin /> <span>sanjitschouhan</span>
+          <a href="https://www.linkedin.com/in/abhijeet-nigote" target="_blank" className="flex items-center justify-center w-full bg-blue-700 dark:bg-blue-600 text-white py-2 rounded-xl shadow-md space-x-2">
+            <FaLinkedin /> <span>abhijeet-nigote</span>
           </a>
-          <a href="https://www.instagram.com/sanjitschouhan" target="_blank" className="flex items-center justify-center w-full bg-gradient-to-r from-pink-500 to-red-500 dark:from-pink-400 dark:to-red-400 text-white py-2 rounded-xl shadow-md space-x-2">
-            <FaInstagram /> <span>sanjitschouhan</span>
+          <a href="https://www.instagram.com/abhijeetnigote_" target="_blank" className="flex items-center justify-center w-full bg-gradient-to-r from-pink-500 to-red-500 dark:from-pink-400 dark:to-red-400 text-white py-2 rounded-xl shadow-md space-x-2">
+            <FaInstagram /> <span>abhijeetnigote_</span>
           </a>
-          <a href="https://twitter.com/sanjitschouhan" target="_blank" className="flex items-center justify-center w-full bg-black dark:bg-gray-700 text-white py-2 rounded-xl shadow-md space-x-2">
-            <FaX /> <span>sanjitschouhan</span>
-          </a>
-          <a href="https://wa.me/916303338982" target="_blank" className="flex items-center justify-center w-full bg-green-500 dark:bg-green-400 text-white py-2 rounded-xl shadow-md space-x-2">
+          <a href="https://wa.me/918319427734" target="_blank" className="flex items-center justify-center w-full bg-green-500 dark:bg-green-400 text-white py-2 rounded-xl shadow-md space-x-2">
             <FaWhatsapp /> <span>WhatsApp</span>
           </a>
           <hr />
-          <a href="tel:+91 6303338982" className="flex items-center justify-center w-full text-orange-500 dark:text-orange-400">
-            Found My Key? Call Me
-          </a>
-          <a href="tel:+91 8074548058" className="flex items-center justify-center w-full text-red-500 dark:text-red-400">
-            Call My Emergency Contact
+          <a href="tel:+918319427734" className="flex items-center justify-center w-full text-orange-500 dark:text-orange-400">
+            Call Me
           </a>
         </div>
       </div>
